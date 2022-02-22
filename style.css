@@ -1,0 +1,23 @@
+body {
+  height: 1000px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid black;
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box {
+  border: 1px solid black;
+}
+
+.a2 {
+  background-color: yellow;
+}
