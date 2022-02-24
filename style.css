@@ -3,11 +3,13 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 0.3fr 1fr 0.1fr;
+  grid-template-rows: 0.2fr 0.7fr 0.1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
   display: grid;
   justify-self: center;
   align-self: end;
@@ -16,7 +18,7 @@ h1 {
 }
 
 .container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 400px;
   width: 400px;
   display: grid;
@@ -28,34 +30,92 @@ h1 {
 }
 
 .box {
-  border: 1px solid black;
+  border: 3px solid #5b9db1;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Shizuru", cursive;
+  font-size: 65px;
+}
+
+.box:hover {
+  box-shadow: 0em 0.05em 6px 1px #5c4d7d;
 }
 
 .turn-indicator {
   height: 200px;
   width: 200px;
-  border: 1px solid grey;
-  grid-row: 2;
+  grid-row: 1 / -1;
   align-self: center;
-  border-radius: 1em;
+  border-radius: 0.3em;
+  font-family: "Shizuru", cursive;
+  font-size: 90px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.a1 {
+  border-top: none;
+  border-left: none;
+}
+
+.a2 {
+  border-top: none;
+}
+
+.a3 {
+  border-top: none;
+  border-right: none;
+}
+
+.b1 {
+  border-left: none;
+}
+
+.b3 {
+  border-right: none;
+}
+
+.c1 {
+  border-left: none;
+  border-bottom: none;
+}
+
+.c2 {
+  border-bottom: none;
+}
+
+.c3 {
+  border-right: none;
+  border-bottom: none;
 }
 
 .big-x {
-  background-color: pink;
+  background-color: #a01a581c;
 }
 
 .big-o {
-  background-color: blue;
+  background-color: #1780a11c;
 }
 
 .show-active {
-  box-shadow: 0em 0.2em 0.3em 0.2em gray;
+  box-shadow: 0em 0.05em 6px 1px #5c4d7d;
 }
 
 button {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 2px;
+  font-size: medium;
   display: grid;
   align-self: start;
   justify-self: center;
   grid-column: 2;
   grid-row: 3;
+  background-color: #892b64;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 0.5em;
+  border: none;
+  margin-top: -20px;
 }

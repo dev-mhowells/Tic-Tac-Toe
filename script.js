@@ -40,9 +40,9 @@ const checkForWinner = function (currentPlayer) {
     const foundMatch = matches(winCondition, currentPlayer);
     if (foundMatch === true) {
       if (player1Active === true) {
-        title.textContent = "Pink wins";
+        title.textContent = "X wins !!";
       } else if (player2Active === true) {
-        title.textContent = "Blue wins";
+        title.textContent = "O wins !!";
       }
       isWinner = true;
     }
@@ -116,13 +116,15 @@ const setup = function () {
       function () {
         if (isWinner === false && isDraw === false) {
           if (player1Active) {
-            box.style.backgroundColor = "pink";
+            // box.style.backgroundColor = "pink";
+            box.textContent = "X";
             player1List.push(box.classList[1]);
             checkForWinner(player1List);
             checkForDraw();
             swtitchInidicator();
           } else if (player2Active) {
-            box.style.backgroundColor = "blue";
+            // box.style.backgroundColor = "blue";
+            box.textContent = "O";
             player2List.push(box.classList[1]);
             checkForWinner(player2List);
             checkForDraw();
@@ -136,7 +138,7 @@ const setup = function () {
 };
 
 resetButton.addEventListener("click", function () {
-  title.textContent = "Ok";
+  title.textContent = "Naughts and Crosses";
   playAgain();
 });
 
